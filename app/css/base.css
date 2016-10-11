@@ -16,6 +16,14 @@
     display: inline-block;
 }
 
+.socials-block__list-item.vk .socials-block__list-link {
+    background-color: #327dc2;
+}
+
+.socials-block__list-item.facebook .socials-block__list-link {
+    background-color: #2a589a;
+}
+
 
 /*END:header*/
 
@@ -30,11 +38,13 @@ html {
 }
 
 .container-wrapper {
+    position: relative;
     max-width: 1280px;
     margin: 0 auto;
 }
 
 .container-inner {
+    position: relative;
     max-width: 960px;
     margin: 0 auto;
 }

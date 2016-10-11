@@ -9,11 +9,13 @@ html {
 }
 
 .container-wrapper {
+	 position: relative;
     max-width: gridValue('container-wrapper');
     margin: 0 auto;
 }
 
 .container-inner {
+	 position: relative;
     max-width: gridValue('container-inner');
     margin: 0 auto;
 }

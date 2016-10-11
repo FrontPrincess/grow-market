@@ -1,5 +1,7 @@
 $colors: ( 
-    'primary': #fff
+    'primary': #fff,
+    'vk': #327DC2,
+    'facebook': #2A589A,
 );
 @function color($color) {
     @return map-get($colors, $color);
