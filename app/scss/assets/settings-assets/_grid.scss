@@ -1,8 +1,7 @@
 $grid: ( 
-    'container': 1170px,
-    'leftBlock': 770px,
-    'rightBlock': 370px,
-    'gutter': 15px
+    'container-wrapper': 1280px,
+    'container-inner': 960px
+
 );
 
 @function gridValue($width) {

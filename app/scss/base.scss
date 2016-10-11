@@ -8,4 +8,15 @@ html {
     height: 100%;
 }
 
+.container-wrapper {
+    max-width: gridValue('container-wrapper');
+    margin: 0 auto;
+}
+
+.container-inner {
+    max-width: gridValue('container-inner');
+    margin: 0 auto;
+}
+
+
 /*END:base*/

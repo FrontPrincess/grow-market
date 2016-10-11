@@ -1,3 +1,23 @@
 /*header*/
 
+.site-header {
+	background-color: #fff;
+}
+
+.container-wrapper {
+	background-image: url(../img/main/header-bgi.jpg);
+	background-repeat: no-repeat;
+}
+
+.socials-block {
+	&__list {
+		&-item {
+			display: inline-block;
+		}
+	}
+}
+
+
+
+
 /*END:header*/
