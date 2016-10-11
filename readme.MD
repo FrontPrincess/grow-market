@@ -1,2 +1,2 @@
 # gulp-project
-<p>Arthur Mirzoyan's gulp-project</p>
+<p>Natali Shapovalova's gulp-project</p>
