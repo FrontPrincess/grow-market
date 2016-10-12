@@ -83,6 +83,10 @@ a {
     color: #fff;
 }
 
+.socials-block--header ul {
+    margin-bottom: 20px;
+}
+
 .header-contacts {
     float: left;
     width: 30%;
@@ -111,7 +115,18 @@ a {
 }
 
 .header-main .header-nav__list-item {
+    position: relative;
     display: inline-block;
+}
+
+.header-main .header-nav__list-item:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: auto;
+    content: '';
+    color: #390;
 }
 
 .header-main .header-nav__list-link {

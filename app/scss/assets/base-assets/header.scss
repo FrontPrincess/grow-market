@@ -56,6 +56,11 @@ a {
             }
         }
     }
+    &--header {
+    	ul {
+    		margin-bottom: 20px;
+    	}
+    }
 }
 
 .header-contacts {
@@ -84,7 +89,17 @@ a {
     .header-nav {
         &__list {
             &-item {
+            	position: relative;
                 display: inline-block;
+                &:after {
+                	content: '';
+                	position: absolute;
+                	top: 0;
+                	right: 0;
+                	height: auto;
+                	width: 1px;
+                	color: color('primary');
+                }
             }
             &-link {
                 padding: 5px 16px;
