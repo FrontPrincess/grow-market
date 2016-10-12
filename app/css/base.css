@@ -114,6 +114,14 @@ a {
     display: inline-block;
 }
 
+.header-main .header-nav__list-link {
+    font-family: 'Verdana';
+    font-size: 13px;
+    padding: 5px 16px;
+    text-transform: uppercase;
+    color: #390;
+}
+
 
 /*END:header*/
 

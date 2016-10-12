@@ -45,7 +45,8 @@ gulp.task('scss:app', function() {
 	.pipe(sourcemaps.write(
 		'../scss/sourcemaps'
 	))
-	.pipe(gulp.dest('app/css'));
+	.pipe(gulp.dest('app/css'))
+	.pipe(bsReload({stream:true}));
 });
 // =========== END:scss:app ================
 
