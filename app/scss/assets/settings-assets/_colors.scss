@@ -1,7 +1,11 @@
 $colors: ( 
-    'primary': #fff,
+    'primary': #339900,
     'vk': #327DC2,
     'facebook': #2A589A,
+    'twitter': #00CEF3,
+    'google': #FF4334,
+    'tumblr': #255978,
+    'instagram': #8A4E3B
 );
 @function color($color) {
     @return map-get($colors, $color);

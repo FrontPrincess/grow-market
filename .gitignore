@@ -1,7 +1,7 @@
 node_modules/
 bower_components/
-app/*.html
 dist/
+app/*.html
 *.css.map
 *.log
 *.cache

@@ -1,0 +1,70 @@
+@import 'assets/settings';
+
+/* .home-slider */
+
+.home-slider {
+    &__list {
+        .home-slider__item {
+            display: inline-block;
+            &-description {
+                position: absolute;
+                top: 65px;
+                left: 22%;
+                width: 588px;
+                font-family: Verdana;
+                padding: 19px 28px;
+                opacity: 0.73;
+                color: #fff;
+                background-color: #8bbd19;
+                &-title {
+                    font-size: 36px;
+                    font-weight: normal;
+                    line-height: 45px;
+                    margin-bottom: 37px;
+                    text-transform: uppercase;
+                }
+                &-text {
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+            }
+            &-img {
+                display: block;
+                width: 100%;
+            }
+        }
+        .slick-slide {
+            position: relative;
+        }
+        .slick-dots {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            li {
+                display: inline-block;
+                button {
+                    display: block;
+                    width: 26px;
+                    height: 26px;
+                    font-size: 0;
+                    line-height: 0;
+                    margin-right: 14px;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+                    background-color: #fff;
+                }
+            }
+            .slick-active {
+                button {
+                    border: 4px solid #fff;
+                    background-color: #7cc21f;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* END:.home-slider */

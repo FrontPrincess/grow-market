@@ -8,10 +8,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/base/favicon.ico">
     <!-- vendor -->
     <link rel="stylesheet" href="./css/vendor/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/vendor/slick.css" />
     <!-- END:vendor -->
     <!-- build:css css/bundle.css -->
     <link rel="stylesheet" href="./css/assets.css">
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/main.css">
     <!-- endbuild -->
 </head>
 
@@ -27,7 +30,7 @@
                     <!-- .header-contacts -->
                     <div class="header-contacts">
                         <!-- socials-block -->
-                        <div class="socials-block">
+                        <div class="socials-block socials-block--header">
                             <ul class="socials-block__list">
                                 <li class="socials-block__list-item vk">
                                     <a href="#" class="socials-block__list-link">
@@ -39,41 +42,101 @@
                                         <i class="fa fa-facebook"></i>
                                     </a>
                                 </li>
-                                <li class="socials-block__list-item">
-                                    <a href="#" class="socials-block__list-link twitter">
+                                <li class="socials-block__list-item twitter">
+                                    <a href="#" class="socials-block__list-link">
                                         <i class="fa fa-twitter"></i>
                                     </a>
                                 </li>
-                                <li class="socials-block__list-item">
-                                    <a href="#" class="socials-block__list-link google">
-                                        <i class="fa fa-google-plus-official"></i>
+                                <li class="socials-block__list-item google">
+                                    <a href="#" class="socials-block__list-link">
+                                        <i class="fa fa-google-plus"></i>
                                     </a>
                                 </li>
-                                <li class="socials-block__list-item">
-                                    <a href="#" class="socials-block__list-link tumblr">
+                                <li class="socials-block__list-item tumblr">
+                                    <a href="#" class="socials-block__list-link">
                                         <i class="fa fa-tumblr"></i>
                                     </a>
                                 </li>
-                                <li class="socials-block__list-item">
-                                    <a href="#" class="socials-block__list-link instagram">
+                                <li class="socials-block__list-item instagram">
+                                    <a href="#" class="socials-block__list-link">
                                         <i class="fa fa-instagram"></i>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <!-- END:.socials-block -->
-                        <div class="header-contacts__phones">Наташа</div>
+                        <div class="header-contacts__phones">
+                            <a href="tel:063 471 47 26" class="header-contacts__phones-link">063 471 47 26</a>
+                            <a href="tel:095 855 74 39" class="header-contacts__phones-link">095 855 74 39</a>
+                        </div>
                     </div>
                     <!--END:.header-contacts -->
-                    <!-- .header-nav -->
-                    <div class="header-nav">hfjhg,gk</div>
-                    <!--END:.header-nav -->
-                    <!-- .header-logo -->
-                    <div class="header-logo"></div>
-                    <!--END:.header-logo -->
-                    <!-- .header-user -->
-                    <div class="header-user"></div>
-                    <!--END:.header-user -->
+                    <!-- .header-main -->
+                    <div class="header-main">
+                        <!-- .header-nav -->
+                        <nav class="header-nav">
+                            <ul class="header-nav__list">
+                                <li class="header-nav__list-item">
+                                    <a href="#" class="header-nav__list-link">главная
+                                    </a>
+                                </li>
+                                <li class="header-nav__list-item">
+                                    <a href="#" class="header-nav__list-link">доставка
+                                    </a>
+                                </li>
+                                <li class="header-nav__list-item">
+                                    <a href="#" class="header-nav__list-link">оплата
+                                    </a>
+                                </li>
+                                <li class="header-nav__list-item">
+                                    <a href="#" class="header-nav__list-link">контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--END:.header-nav -->
+                        <!-- .header-logo -->
+                        <div class="header-logo">
+                            <a href="#">
+                            <img src="../img/main/logo.png" alt="grow market logo" class="header-logo__img" />
+                            </a>
+                        </div>
+                        <!--END:.header-logo -->
+                    </div>
+                    <!-- END:.header-main -->
+                    <!-- .header-action -->
+                    <div class="header-action">
+                        <!-- .header-action__user-block -->
+                        <div class="header-action__user-block">
+                            <!-- .search -->
+                            <div class="header-action__search">
+                                <a href="#">
+                                <img src="../img/main/search.png" alt="search" class="header-action__search-img" />
+                                </a>
+                            </div>
+                            <!--END:.search -->
+                            <!-- .login -->
+                            <div class="header-action__login">
+                                <a href="#">
+                                <img src="../img/main/login.png" alt="login" class="header-action__login-img" />
+                                </a>
+                            </div>
+                            <!--END:.login -->
+                            </div>
+                        <!-- END:.header-action__user-block -->
+                            <!-- .cart -->
+                            <div class="header-action__cart">
+                                <span class="header-action__cart-text">
+                                <a href="#">корзина</a>
+                                </span>
+                                <a href="#">
+                                <img src="../img/main/cart.png" alt="cart" class="header-action__cart-img" />
+                                </a>
+                            </div>
+                            <!--END:.cart -->
+                        
+                    </div>
+                    <!--END:.header-action -->
                 </div>
                 <!--END:.container-inner -->
             </div>
