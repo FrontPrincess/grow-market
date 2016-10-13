@@ -40,6 +40,7 @@
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
 }
 
@@ -53,12 +54,19 @@ a {
     background-position-x: center;
 }
 
+.site-header .container-inner {
+    padding-top: 14px;
+}
+
 .socials-block__list-item {
     position: relative;
     display: inline-block;
     width: 24px;
     height: 24px;
-    margin-right: 10px;
+    /* margin-right: 4px;
+            &:last-child {
+            	margin-right: 0;
+            } */
 }
 
 .socials-block__list-link {
@@ -84,22 +92,22 @@ a {
 }
 
 .socials-block--header ul {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 
 .header-contacts {
     float: left;
-    width: 30%;
-    margin-right: 20px;
+    width: 19%;
+    margin-right: 56px;
     text-align: right;
 }
 
 .header-contacts__phones {
     display: inline-block;
-    padding: 5px 20px;
+    padding: 5px 5px 5px 20px;
     background-image: url(../img/main/phone.png);
     background-repeat: no-repeat;
-    background-position: 0 13px;
+    background-position: 0 8px;
 }
 
 .header-contacts__phones-link {
@@ -111,30 +119,73 @@ a {
 }
 
 .header-main {
+    position: relative;
     float: left;
+    width: 50%;
+    /* margin-right: 60px; */
+    text-align: center;
 }
 
 .header-main .header-nav__list-item {
-    position: relative;
     display: inline-block;
+    border-right: 1px solid #390;
 }
 
-.header-main .header-nav__list-item:after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 1px;
-    height: auto;
-    content: '';
-    color: #390;
+.header-main .header-nav__list-item:last-child {
+    border-right: none;
 }
 
 .header-main .header-nav__list-link {
     font-family: 'Verdana';
     font-size: 13px;
-    padding: 5px 16px;
+    display: block;
+    padding: 0 11px;
     text-transform: uppercase;
     color: #390;
+}
+
+.header-main .header-logo {
+    position: absolute;
+    z-index: 9999;
+    top: 40px;
+    left: 0;
+}
+
+.header-main .header-logo__img {
+    display: block;
+}
+
+.header-action {
+    float: right;
+    margin-right: 8px;
+    text-align: right;
+}
+
+.header-action__user-block {
+    margin-bottom: 37px;
+}
+
+.header-action__search {
+    display: inline-block;
+    margin-right: 22px;
+}
+
+.header-action__login {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header-action__cart-text {
+    font-family: Verdana;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #390;
+}
+
+.header-action__cart-text a {
+    margin-right: 56px;
+    /* display: inline-block; */
+    padding: 5px 12px;
 }
 
 
