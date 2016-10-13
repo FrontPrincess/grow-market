@@ -1,6 +1,5 @@
 node_modules/
 bower_components/
-app/*.html
 dist/
 *.css.map
 *.log
