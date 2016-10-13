@@ -65,7 +65,7 @@ a {
     height: 24px;
     /* margin-right: 4px;
             &:last-child {
-            	margin-right: 0;
+                margin-right: 0;
             } */
 }
 
@@ -180,12 +180,14 @@ a {
     font-size: 13px;
     text-transform: uppercase;
     color: #390;
+    color: #390;
 }
 
 .header-action__cart-text a {
     margin-right: 56px;
     /* display: inline-block; */
     padding: 5px 12px;
+    color: #390;
 }
 
 
