@@ -30,7 +30,7 @@
             }
             &-img {
                 display: block;
-                width: 100%;
+                min-height: 400px;
             }
         }
         .slick-slide {
@@ -40,6 +40,7 @@
             position: absolute;
             left: 50%;
             bottom: 0;
+            @extend %translate-center-x;
             li {
                 display: inline-block;
                 button {
