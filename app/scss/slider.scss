@@ -4,6 +4,7 @@
 
 .home-slider {
     &__list {
+        margin-bottom: 0;
         .home-slider__item {
             display: inline-block;
             &-description {
