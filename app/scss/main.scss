@@ -2,21 +2,33 @@
 
 /* .category-block */
 
+.main-block {
+    a,
+    span {
+        font-family: Verdana;
+        font-size: 13px;
+        font-weight: normal;
+        color: color('primary');
+    }
+}
+
 .category-block {
-    padding-top: 30px;
+    padding: 30px 0;
     background-color: #eff3cf;
     &__title {
         @extend %default-title;
     }
     &__wrapper {
-    	text-align: center;
+        text-align: center;
     }
     &__list {
+        margin-bottom: 0;
 
+        @extend %default-list-center;
     }
     &__item {
         display: inline-block;
-        width: 235px;
+        width: 240px;
         padding: 10px;
         text-align: center;
         &-title {
@@ -35,10 +47,7 @@
             padding-left: 10px;
             text-align: left;
             a {
-                font-family: Verdana;
-                font-size: 15px;
                 line-height: 24px;
-                color: color('primary');
             }
         }
     }
@@ -48,6 +57,76 @@
 
 /* .hit-block */
 
-
+.hit-block {
+    padding: 42px 0;
+    &__title {
+        @extend %default-title;
+    }
+    &__wrapper {
+        text-align: center;
+    }
+    &__list {
+        @extend %clearfix;
+        @extend %default-list-center;
+    }
+    &__item {
+        display: inline-block;
+        float: left;
+        width: 24.22%;
+        margin-right: 10px;
+        border: 1px solid #c3c3c3;
+        &:last-child {
+            margin-right: 0;
+        }
+        &-title {
+            a {
+                line-height: 30px;
+            }
+        }
+        &-link {
+            display: inline-block;
+            padding: 10px 0;
+            img {
+                display: block;
+            }
+        }
+        &-btn {
+            display: block;
+            font-family: Verdana;
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 30px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            padding: 5px 28.5px 5px 50.5px;
+            color: #fff;
+            background-color: #ff1620;
+            background-image: url(../img/main/price-cart.png);
+            background-repeat: no-repeat;
+            background-position: 22px 10px;
+            &--inactive {
+            	background-color: #D8D8D8;
+            }
+        }
+    }
+    &__product-item {
+        padding: 5px;
+        margin-bottom: 10px;
+        .not-available {
+            color: #333;
+        }
+    }
+    .priceline {
+        &__text {
+            color: #333;
+        }
+        &__value {
+            color: #f00;
+            &:after {
+                content: ' ' attr(data-currency);
+            }
+        }
+    }
+}
 
 /* END:.hit-block */

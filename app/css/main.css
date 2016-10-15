@@ -1,4 +1,11 @@
-.category-block__title {
+.hit-block__list:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.category-block__title,
+.hit-block__title {
     font-family: Verdana;
     font-size: 24px;
     font-weight: bold;
@@ -8,11 +15,26 @@
     color: #390;
 }
 
+.category-block__list,
+.hit-block__list {
+    font-size: 0;
+    display: table;
+    width: 100%;
+}
+
 
 /* .category-block */
 
+.main-block a,
+.main-block span {
+    font-family: Verdana;
+    font-size: 13px;
+    font-weight: normal;
+    color: #390;
+}
+
 .category-block {
-    padding-top: 30px;
+    padding: 30px 0;
     background-color: #eff3cf;
 }
 
@@ -20,9 +42,13 @@
     text-align: center;
 }
 
+.category-block__list {
+    margin-bottom: 0;
+}
+
 .category-block__item {
     display: inline-block;
-    width: 235px;
+    width: 240px;
     padding: 10px;
     text-align: center;
 }
@@ -45,10 +71,7 @@
 }
 
 .category-block__submenu-item a {
-    font-family: Verdana;
-    font-size: 15px;
     line-height: 24px;
-    color: #390;
 }
 
 
@@ -56,6 +79,80 @@
 
 
 /* .hit-block */
+
+.hit-block {
+    padding: 42px 0;
+}
+
+.hit-block__wrapper {
+    text-align: center;
+}
+
+.hit-block__item {
+    display: inline-block;
+    float: left;
+    width: 24.22%;
+    margin-right: 10px;
+    border: 1px solid #c3c3c3;
+}
+
+.hit-block__item:last-child {
+    margin-right: 0;
+}
+
+.hit-block__item-title a {
+    line-height: 30px;
+}
+
+.hit-block__item-link {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.hit-block__item-link img {
+    display: block;
+}
+
+.hit-block__item-btn {
+    font-family: Verdana;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 5px 28.5px 5px 50.5px;
+    color: #fff;
+    background-color: #ff1620;
+    background-image: url(../img/main/price-cart.png);
+    background-repeat: no-repeat;
+    background-position: 22px 10px;
+}
+
+.hit-block__item-btn--inactive {
+    background-color: #d8d8d8;
+}
+
+.hit-block__product-item {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.hit-block__product-item .not-available {
+    color: #333;
+}
+
+.hit-block .priceline__text {
+    color: #333;
+}
+
+.hit-block .priceline__value {
+    color: #f00;
+}
+
+.hit-block .priceline__value:after {
+    content: ' ' attr(data-currency);
+}
 
 
 /* END:.hit-block */
