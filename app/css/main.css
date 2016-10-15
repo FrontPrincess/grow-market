@@ -8,9 +8,16 @@
     color: #390;
 }
 
+
+/* .category-block */
+
 .category-block {
     padding-top: 30px;
     background-color: #eff3cf;
+}
+
+.category-block__wrapper {
+    text-align: center;
 }
 
 .category-block__item {
@@ -43,4 +50,13 @@
     line-height: 24px;
     color: #390;
 }
+
+
+/* END:.category-block */
+
+
+/* .hit-block */
+
+
+/* END:.hit-block */
 /*# sourceMappingURL=sourcemaps/main.css.map */

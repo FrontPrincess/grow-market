@@ -1,10 +1,18 @@
 @import 'assets/settings';
 
+/* .category-block */
+
 .category-block {
     padding-top: 30px;
     background-color: #eff3cf;
     &__title {
         @extend %default-title;
+    }
+    &__wrapper {
+    	text-align: center;
+    }
+    &__list {
+
     }
     &__item {
         display: inline-block;
@@ -35,3 +43,11 @@
         }
     }
 }
+
+/* END:.category-block */
+
+/* .hit-block */
+
+
+
+/* END:.hit-block */
