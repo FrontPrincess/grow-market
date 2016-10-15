@@ -1,5 +1,23 @@
 @import 'assets/settings';
 
+html {
+            height: 100%;
+}
+
+.socials-block__list-item.instagram .socials-block__list-link {
+            background-color: #8a4e3b;
+}
+
+.socials-block__list-item.facebook .socials-block__list-link {
+            background-color: #2a589a;
+}
+
+.site-header .container-inner:after {
+            display: block;
+            clear: both;
+            content: '';
+}
+
 /*header*/
 
 @each $socialLink in $socialLinks {
@@ -131,6 +149,7 @@ a {
     text-align: right;
     &__user-block {
         margin-bottom: 37px;
+        position: relative;
     }
     &__search {
         display: inline-block;
@@ -139,8 +158,33 @@ a {
     &__login {
         display: inline-block;
         margin-right: 20px;
+        position: relative;
+        z-index: 102;
     }
     &__cart {
+        border-radius: 10px; 
+        position: relative;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background-color: #fff; 
+        box-shadow: 0 3px 13px rgba(0,0,0,.33);
+        padding: 8px 10px 1px 10px;
+        max-height: 37px;
+        @extend %default-transition;
+        cursor: pointer;
+        &-description-area {
+            display: none;
+            position: absolute;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            left: 0;
+            padding-top: 40px;
+            border-radius: 10px; 
+            padding: 8px 10px 1px 10px;
+            background-color: #fff;     
+            box-shadow: 0 8px 13px rgba(0,0,0,.1);
+        }
         &-text {
             font-family: Verdana;
             color: color('primary');
@@ -149,17 +193,51 @@ a {
             color: color('primary');
             a {
                 /* display: inline-block; */
-                padding: 5px 12px;
-                margin-right: 56px;
+                padding: 7px 12px;
+                margin-right: 53px;
                 color: color('primary');
             }
         }
+        &:hover .header-action__cart-description-area{
+            display: block;
+        }
+    }
+    &__title-area{
+        position: relative;
+        z-index: 101;
     }
 }
 
 
 
+.hidden-registration{
+   background-color: #fff;
+    box-shadow: 0 3px 13px rgba(0, 0, 0, .33);
+    padding: 8px 10px 8px 10px;
+   position: absolute;
+   border-radius: 10px;
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
+   width: 100%;
+   top: -15px;
+   text-align: left;
+   z-index: 1;
+   display: none;
+   &__list{
+        margin-bottom: 0;
+    li{
+        list-style: none;
+        > a{
+            font-family: Verdana;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: color('primary');
+        }
+    }
+   }
+}
 
 
 
 /*END:header*/
+
