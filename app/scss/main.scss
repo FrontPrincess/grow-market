@@ -130,3 +130,24 @@
 }
 
 /* END:.hit-block */
+
+/* .producers-block */
+
+.producers-block {
+	padding: 20px 0;
+	&__title {
+		@extend %default-title;
+	}
+	&__list {
+		@extend %default-list-center;
+	}
+	&__item {
+		display: inline-block;
+		width: 20%;
+		padding: 20px;
+		
+	}
+}
+
+/* END:.producers-block */
+
