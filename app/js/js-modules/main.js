@@ -17,5 +17,18 @@ $(document).ready(function() {
 		$(this).fadeOut(100);
 	});
 	// END:headerActionLogin
+
+	// categoryBlockItemHasChildrenItem
+	categoryBlockItemHasChildrenItem.on('click', '.category-block__item-title', function(event) {
+		event.preventDefault();
+		$(this).parents('li').toggleClass('active');
+	});
+
+	$('body').mouseup(function(event) {
+    	if (!categoryBlockItemHasChildrenTitle.is(event.target) && categoryBlockItemHasChildrenItem.has(event.target).length === 0) {
+        	categoryBlockItemHasChildrenItem.removeClass('active');
+   	}
+	});
+	// END:categoryBlockItemHasChildrenItem
 });
 
