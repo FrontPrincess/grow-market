@@ -32,6 +32,7 @@
         width: 240px;
         padding: 10px;
         text-align: center;
+
         @extend %default-transition;
         &-title {
             a {
@@ -42,39 +43,41 @@
                 color: color('primary');
             }
         }
-        &--has-children{
-            .category-block__item-title{
-                > a{
+        &--has-children {
+            .category-block__item-title {
+                > a {
                     position: relative;
                     display: inline-block;
-                    &:after{
+                    &:after {
                         display: inline-block;
                         font-family: 'FontAwesome';
                         font-size: 13px;
-                        content: "\f078";
                         padding-left: 5px;
+                        content: '\f078';
                         text-decoration: none;
                         color: color('primary');
                     }
                 }
             }
-            &.active{
+            &.active {
                 background-color: #fff;
                 .category-block__item-link,
-                .category-block__item-title{
+                .category-block__item-title {
                     position: relative;
                     z-index: 101;
                 }
-                .category-block__submenu{
-                    display: block;
+                .category-block__submenu {
                     position: absolute;
                     top: 0;
                     left: 0;
-                    width: 100%;
                     z-index: 100;
+                    display: block;
+                    width: 100%;
                     padding-top: 150px;
                     background-color: #fff;
-                    box-shadow: 0 0 8px rgba(0,0,0,.19);
+                    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.19);
+                    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.19);
+                    box-shadow: 0 0 8px rgba(0,0,0,0.19);
                 }
             }
         }
@@ -145,13 +148,13 @@
             background-repeat: no-repeat;
             background-position: 22px 10px;
             &--inactive {
-            	background-color: #D8D8D8;
+                background-color: #d8d8d8;
             }
         }
     }
     &__product-item {
-        padding: 5px;
         margin-bottom: 10px;
+        padding: 5px;
         .not-available {
             color: #333;
         }
@@ -174,20 +177,101 @@
 /* .producers-block */
 
 .producers-block {
-	padding: 20px 0;
-	&__title {
-		@extend %default-title;
-	}
-	&__list {
-		@extend %default-list-center;
-	}
-	&__item {
-		display: inline-block;
-		width: 20%;
-		padding: 20px;
-		
-	}
+    padding: 20px 0;
+    &__title {
+        @extend %default-title;
+    }
+    &__list {
+        @extend %default-list-center;
+    }
+    &__item {
+        display: inline-block;
+        width: 20%;
+        padding: 20px;
+    }
 }
 
 /* END:.producers-block */
 
+/* .news-block */
+
+.news-block {
+	padding: 30px 0px;
+    &__wrapper {
+        margin: 20px;
+    }
+    &__title {
+        @extend %default-title;
+    }
+    &__list {
+        margin: 0 -5px;
+
+        @extend %default-list-center;
+        @extend %clearfix;
+    }
+    &__item {
+        display: inline-block;
+        float: left;
+        width: 25%;
+        font-family: Verdana;
+        font-size: 13px;
+        padding: 0 5px;
+        &-title {
+            min-height: 35px;
+            font-size: 15px;
+            a {
+                font-weight: bold;
+                color: #000;
+            }
+        }
+    }
+    &__img {
+        &-link {
+            display: inline-block;
+            img {
+                display: block;
+            }
+        }
+    }
+    &__description {
+        p {
+            color: #333;
+        }
+    }
+}
+
+.news-block__article {
+    &-title {
+        font-family: Verdana;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: color('primary');
+    }
+    &-description {
+        font-family: Verdana;
+        padding: 18px;
+        border: 1px dashed #c3c3c3;
+        p {
+            font-size: 13px;
+            color: #000;
+        }
+        &-title {
+            font-size: 18px;
+            color: #000;
+        }
+    }
+    &-item {
+        font-size: 13px;
+        list-style-type: none;
+        color: #000;
+        &:before {
+            display: inline-block;
+            font-family: 'FontAwesome';
+            content: '\f006';
+            color: color('primary');
+        }
+    }
+}
+
+
+/* END:.news-block */
