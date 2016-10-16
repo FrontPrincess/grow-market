@@ -1,5 +1,7 @@
 var headerActionLogin = $('#headerActionLogin');
 var hiddenRegistration = headerActionLogin.parent().find('.hidden-registration');
+var categoryBlockItemHasChildrenItem = $('.category-block__item--has-children');
+var categoryBlockItemHasChildrenTitle = categoryBlockItemHasChildrenItem.find('.category-block__item-title');
 
 $(document).ready(function() {
 	// home-slider
@@ -18,4 +20,17 @@ $(document).ready(function() {
 		$(this).fadeOut(100);
 	});
 	// END:headerActionLogin
+
+	// categoryBlockItemHasChildrenItem
+	categoryBlockItemHasChildrenItem.on('click', '.category-block__item-title', function(event) {
+		event.preventDefault();
+		$(this).parents('li').toggleClass('active');
+	});
+
+	$('body').mouseup(function(event) {
+    	if (!categoryBlockItemHasChildrenTitle.is(event.target) && categoryBlockItemHasChildrenItem.has(event.target).length === 0) {
+        	categoryBlockItemHasChildrenItem.removeClass('active');
+   	}
+	});
+	// END:categoryBlockItemHasChildrenItem
 });
