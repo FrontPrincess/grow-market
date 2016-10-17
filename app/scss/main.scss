@@ -289,6 +289,9 @@ fieldset {
 
 .form-block {
 	font-family: Verdana;
+	&__form {
+		padding-bottom: 17px;
+	}
     .form__description {
         
         text-align: center;
@@ -309,12 +312,16 @@ fieldset {
             font-size: 15px;
             line-height: 24px;
             color: #000;
+            p {
+            	margin-bottom: 10px;
+            }
         }
     }
     .form__main {
         width: 43.23%;
         margin: 0 auto;
         padding-bottom: 34px;
+        margin-bottom: 10px;
         background-image: url(../img/main/form-bg.png);
         -webkit-background-size: cover;
            -moz-background-size: cover;
@@ -355,7 +362,7 @@ fieldset {
     }
     &__ico {
         float: right;
-        padding-left: 2px;
+        padding-left: 10px;
         cursor: pointer;
         color: #949100;
         &:last-child {
@@ -373,5 +380,28 @@ fieldset {
 }
 
 /* .star-rating */
+
+.form__submit {
+	text-align: center;
+	margin-bottom: 10px;
+	.captcha {
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 30px;
+	}
+	&-btn {
+		font-family: Verdana;
+		font-size: 13px;
+		color: #fff;
+		text-transform: uppercase;
+		background-color: #009A00;
+		font-weight: bold;
+		padding: 13.5px 31.5px;
+		-webkit-border-radius: 20px;
+		   -moz-border-radius: 20px;
+		        border-radius: 20px;
+	}
+}
+
 
 /* END:.review-block */
