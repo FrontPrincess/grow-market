@@ -4,6 +4,7 @@
 
 .home-slider {
     &__list {
+        margin-bottom: 0;
         .home-slider__item {
             display: inline-block;
             &-description {
@@ -13,9 +14,8 @@
                 width: 588px;
                 font-family: Verdana;
                 padding: 19px 28px;
-                opacity: 0.73;
                 color: #fff;
-                background-color: #8bbd19;
+                background-color: rgba(139,189,25,0.73);
                 &-title {
                     font-size: 36px;
                     font-weight: normal;
@@ -30,7 +30,7 @@
             }
             &-img {
                 display: block;
-                width: 100%;
+                min-height: 400px;
             }
         }
         .slick-slide {
@@ -40,6 +40,7 @@
             position: absolute;
             left: 50%;
             bottom: 0;
+            @extend %translate-center-x;
             li {
                 display: inline-block;
                 button {
