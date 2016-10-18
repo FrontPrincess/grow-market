@@ -58,16 +58,20 @@
 
 %placeholder-style {
     &::-webkit-input-placeholder {
-        color: #fff;
+        color: #666;
+        font-family: Verdana;
     }
     &::-moz-placeholder {
-        color: #fff;
+        color: #666;
+        font-family: Verdana;
     }
     &:-moz-placeholder {
-        color: #fff;
+        color: #666;
+        font-family: Verdana;
     }
     &:-ms-input-placeholder {
-        color: #fff;
+        color: #666;
+        font-family: Verdana;
     }
 }
 
