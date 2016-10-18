@@ -1,23 +1,5 @@
 @import 'assets/settings';
-/* 
-html {
-    height: 100%;
-}
 
-.socials-block__list-item.instagram .socials-block__list-link {
-    background-color: #8a4e3b;
-}
-
-.socials-block__list-item.facebook .socials-block__list-link {
-    background-color: #2a589a;
-}
-
-.site-header .container-inner:after {
-    display: block;
-    clear: both;
-    content: '';
-}
- */
 /*header*/
 
 @each $socialLink in $socialLinks {
