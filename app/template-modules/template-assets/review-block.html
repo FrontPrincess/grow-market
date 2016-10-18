@@ -3,7 +3,7 @@
 	<div class="container-wrapper">
 		<div class="container-inner">
 			<div class="form-block">
-				<form action="#" class="form-block__form">
+				<form action="#" class="form-block__form" novalidate>
 					<fieldset class="form__description">
 						<h2 class="form__description-title">Отзывы</h2>
 						<div class="form__description-text">
@@ -11,8 +11,8 @@
 						</div>
 					</fieldset>
 					<fieldset class="form__main">
-						<input type="text" placeholder="Имя*"  class="form__main-text" />
-						<input type="text" placeholder="E-mail:*"  class="form__main-text" />
+						<input type="text" placeholder="Имя*" name="name" class="form__main-text" />
+						<input type="text" placeholder="E-mail:*" name="email" class="form__main-text" />
 						<textarea name="text" rows="1" placeholder="Текст сообщения" class="form__main-text textarea"></textarea>
 						<!-- .star-rating -->
 						<div class="star-rating">

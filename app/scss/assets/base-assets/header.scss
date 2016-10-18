@@ -137,6 +137,46 @@ a {
     &__search {
         display: inline-block;
         margin-right: 22px;
+        &-block {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+            display: none;
+            width: 100%;
+            padding: 22px 0;
+            background-color: #fff;
+            .container-inner {
+                padding: 0;
+            }
+            &-form {
+                position: relative;
+                .search-block__search {
+                    width: 86%;
+                    font-size: 20px;
+                    margin-right: 30px;
+                    padding: 22px 63px;
+                    border: none;
+                    background-image: url(../img/main/search-search.png);
+                    background-repeat: no-repeat;
+                }
+                .search-block__submit {
+                    font-size: 0;
+                    padding: 28px 47px;
+                    cursor: pointer;
+                    vertical-align: middle;
+                    border: none;
+                    background-color: transparent;
+                    background-image: url(../img/main/search-submit.png);
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        &:hover {
+            .header-action__search-block {
+                display: block;
+            }
+        }
     }
     &__login {
         position: relative;
@@ -184,16 +224,23 @@ a {
             -webkit-box-shadow: 0 8px 13px rgba(0,0,0,0.1);
             -moz-box-shadow: 0 8px 13px rgba(0,0,0,0.1);
             box-shadow: 0 8px 13px rgba(0,0,0,0.1);
-
+            &--full {
+                display: none !important;
+            }
             .header-cart {
                 &__empty {
-                    color: #333;
                     font-weight: normal;
+                    color: #333;
+                }
+                &__full {
+                    font-weight: normal;
+                    color: #333;
                 }
                 &__checkout {
                     a {
-                        color: color('primary');
                         font-weight: normal;
+                        text-decoration: underline;
+                        color: color('primary');
                     }
                 }
             }

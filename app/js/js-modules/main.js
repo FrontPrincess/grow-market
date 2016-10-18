@@ -30,5 +30,30 @@ $(document).ready(function() {
    	}
 	});
 	// END:categoryBlockItemHasChildrenItem
+
+	// form validate
+	$('.form-block__form').validate({
+  debug: true,
+  // errorPlacement: function(label, element) {
+  //   $('<div class="error-wrapper"></div>').insertAfter(element).append(label);
+  // },
+  rules: {
+    name: {
+      required: true,
+    },
+    email: {
+      required: true
+    },
+  },
+  messages: {
+    name: {
+      required: "Заполните, пожалуйста, это поле",
+    },
+    email: {
+      required: "Заполните, пожалуйста, это поле",
+    },
+  }
+});
+	// END: form validate
 });
 
