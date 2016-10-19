@@ -224,6 +224,13 @@ a {
             -webkit-box-shadow: 0 8px 13px rgba(0,0,0,0.1);
             -moz-box-shadow: 0 8px 13px rgba(0,0,0,0.1);
             box-shadow: 0 8px 13px rgba(0,0,0,0.1);
+            &:after {
+                position: absolute;
+                display: inline-block;
+                content: url(../img/main/cart-bgi.png);
+                bottom: -9px;
+                left: -7px;
+            }
             &--full {
                 display: none !important;
             }
@@ -237,6 +244,7 @@ a {
                     color: #333;
                 }
                 &__checkout {
+                    margin-bottom: 80px;
                     a {
                         font-weight: normal;
                         text-decoration: underline;
