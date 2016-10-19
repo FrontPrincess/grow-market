@@ -1,0 +1,64 @@
+@import 'assets/settings';
+
+@media screen and (max-width: 1338px) {
+    .site-footer {
+        background-image: none;
+        .container-wrapper {
+            background-image: url(../img/main/footer-bg.jpg);
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    .site-footer {
+        .container-wrapper {
+            background-image: none;
+        }
+        .container-inner {
+            padding: 20px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .site-header {
+        .container-wrapper {
+            background-image: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .category-block__item {
+        width: 33%;
+    }
+    .hit-block__item {
+        width: 40%;
+        margin: 2% 5%;
+    }
+    .news-block {
+        &__item {
+            width: 50%;
+            margin-bottom: 20px;
+            padding: 5px 25px;
+            &-title {
+                text-align: center;
+            }
+        }
+        &__img {
+            &-link {
+                display: block;
+                width: 230px;
+                margin: 20px auto;
+            }
+        }
+        &__article {
+        	padding: 0 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 977px) {
+	
+}
