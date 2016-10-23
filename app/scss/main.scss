@@ -17,8 +17,19 @@ fieldset {
 }
 
 .category-block {
+    position: relative;
     padding: 30px 0;
     background-color: #F6F9E7;
+    &:after {
+        content: '';
+        background-image: url(../img/main/category-bgi.png);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        height: 30px;
+    }
     &__title {
         @extend %default-title;
     }
