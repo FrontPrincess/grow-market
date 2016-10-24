@@ -4,6 +4,14 @@ var categoryBlockItemHasChildrenItem = $('.category-block__item--has-children');
 var categoryBlockItemHasChildrenTitle = categoryBlockItemHasChildrenItem.find('.category-block__item-title');
 
 $(document).ready(function() {
+	// .header-toggle
+	$('.header-toggle__btn').on('click', function(event) {
+		event.preventDefault();
+		$(this).toggleClass('active');
+		$('.header-nav').toggleClass('active');
+	});
+	// END: .header-toggle
+
 	// home-slider
 	$('.home-slider__list').slick({
 		dots: true,

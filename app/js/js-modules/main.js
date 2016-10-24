@@ -1,6 +1,14 @@
 //= js-assets/variables
 
 $(document).ready(function() {
+	// .header-toggle
+	$('.header-toggle__btn').on('click', function(event) {
+		event.preventDefault();
+		$(this).toggleClass('active');
+		$('.header-nav').toggleClass('active');
+	});
+	// END: .header-toggle
+
 	// home-slider
 	$('.home-slider__list').slick({
 		dots: true,

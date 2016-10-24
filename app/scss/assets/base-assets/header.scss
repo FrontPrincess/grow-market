@@ -113,9 +113,9 @@ a {
             border: none;
             cursor: pointer;
             @extend %default-transition;
-            /* &--active {
+            &.active {
                 background-image: url(../img/main/svg/header-toggle__btn--active.svg);
-            } */
+            } 
         }
     }
     .header-nav {

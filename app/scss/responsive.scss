@@ -198,6 +198,7 @@
 
 @media screen and (max-width: 500px) {
     .header-main {
+    	padding-bottom: 30px;
         .header-toggle {
             margin-left: 20px;
             &__btn {
@@ -215,11 +216,20 @@
             -o-transition: all 0.5s ease-in;
             -moz-transition: all 0.5s ease-in;
             transition: all 0.5s ease-in;
+            -webkit-transform: translateX(-100%);
+               -moz-transform: translateX(-100%);
+                -ms-transform: translateX(-100%);
+                 -o-transform: translateX(-100%);
+                    transform: translateX(-100%);
             &__list {
                 &-item {
                     display: block;
                     border: none;
-                    /* padding: 10px; */
+
+                    &:hover,
+                    &:focus {
+                        border: 1px solid #390;
+                    }
                 }
                 &-link {
                     padding: 20px;
@@ -227,12 +237,16 @@
 							-o-transition: all 0.25s ease-in;
 							-moz-transition: all 0.25s ease-in;
 							transition: all 0.25s ease-in;
-                    /* @extend %default-transition; */
-                    &:hover,
-                    &:focus {
-                        border: 1px solid #390;
-                    }
+                    
+                    
                 }
+            }
+            &.active {
+            	-webkit-transform: translateX(0);
+            	   -moz-transform: translateX(0);
+            	    -ms-transform: translateX(0);
+            	     -o-transform: translateX(0);
+            	        transform: translateX(0);
             }
         }
         .header-logo {
@@ -307,6 +321,9 @@
 }
 
 @media screen and (max-width: 384px) {
+    .header-main .header-nav {
+    	width: 100%;
+    }
     .footer-contacts {
         padding: 0 30px;
     }
@@ -314,7 +331,7 @@
 
 @media screen and (max-width: 320px) {
     .header-main .header-logo {
-        width: 80%;
+        width: 65%;
     }
     .form-block {
         .form__main {
