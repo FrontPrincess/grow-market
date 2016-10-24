@@ -96,6 +96,28 @@ a {
     width: 50%;
     /* margin-right: 60px; */
     text-align: center;
+
+    @extend %clearfix;
+    .header-toggle {
+        float: left;
+        &__btn {
+            display: none;
+            width: 25px;
+            height: 25px;
+            background: none;
+            background-image: url(../img/main/svg/header-toggle__btn.svg);
+            -webkit-background-size: 100% 100%;
+            -moz-background-size: 100% 100%;
+            -o-background-size: 100% 100%;
+            background-size: 100% 100%;
+            border: none;
+            cursor: pointer;
+            @extend %default-transition;
+            /* &--active {
+                background-image: url(../img/main/svg/header-toggle__btn--active.svg);
+            } */
+        }
+    }
     .header-nav {
         &__list {
             &-item {
@@ -227,10 +249,10 @@ a {
             box-shadow: 0 8px 13px rgba(0,0,0,0.1);
             &:after {
                 position: absolute;
+                left: -7px;
+                bottom: -9px;
                 display: inline-block;
                 content: url(../img/main/cart-bgi.png);
-                bottom: -9px;
-                left: -7px;
             }
             &--full {
                 display: none !important;

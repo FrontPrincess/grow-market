@@ -196,6 +196,54 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .header-main {
+        .header-toggle {
+            margin-left: 20px;
+            &__btn {
+                display: inline-block;
+            }
+        }
+        .header-nav {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            z-index: 1000;
+            width: 50%;
+            background-color: #fff;
+            -webkit-transition: all 0.5s ease-in;
+            -o-transition: all 0.5s ease-in;
+            -moz-transition: all 0.5s ease-in;
+            transition: all 0.5s ease-in;
+            &__list {
+                &-item {
+                    display: block;
+                    border: none;
+                    /* padding: 10px; */
+                }
+                &-link {
+                    padding: 20px;
+							-webkit-transition: all 0.25s ease-in;
+							-o-transition: all 0.25s ease-in;
+							-moz-transition: all 0.25s ease-in;
+							transition: all 0.25s ease-in;
+                    /* @extend %default-transition; */
+                    &:hover,
+                    &:focus {
+                        border: 1px solid #390;
+                    }
+                }
+            }
+        }
+        .header-logo {
+            top: 11px;
+        }
+    }
+    .news-block__item {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 412px) {
     .main-block {
         h2 {
@@ -220,11 +268,9 @@
         margin: 0 5% 40px;
     }
 
-    .news-block__item {
-        width: 100%;
-    }
+
     .news-block__article {
-    	padding: 0 15px;
+        padding: 0 15px;
         &-title {
             font-size: 16px;
             padding-left: 0;
@@ -235,7 +281,6 @@
                 font-size: 12px;
             }
             &-title {
-            	
                 font-size: 14px;
             }
         }
@@ -244,24 +289,49 @@
         }
     }
     .form-block {
-    	.form__description-title:before {
-    	display: none;
+        .form__description-title:before {
+            display: none;
+        }
+        .form__main {
+            width: 90%;
+        }
     }
-    .form__main {
-    	width: 90%;
+    .footer-contacts,
+    .footer-counter {
+        display: block;
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
     }
- }
- .footer-contacts, .footer-counter {
- 	float: none;
- 	display: block;
- 	width: 100%;
- 	text-align: center;
- 	margin-left: 0;
- }
 }
 
 @media screen and (max-width: 384px) {
-	.footer-contacts {
-		padding: 0 30px;
-	}
+    .footer-contacts {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header-main .header-logo {
+        width: 80%;
+    }
+    .form-block {
+        .form__main {
+            margin-bottom: 20px;
+            padding-bottom: 17px;
+            &-text {
+                width: 85%;
+            }
+            .textarea {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .star-rating__wrap {
+        font-size: 0.8rem;
+    }
+    .form__submit .captcha {
+        width: 90%;
+    }
 }
